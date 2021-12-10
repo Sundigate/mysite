@@ -1,0 +1,50 @@
+.content-contacts{
+    display: block;
+}
+
+.wrapper{
+    text-align: center;
+    box-sizing: border-box;
+
+    background:whitesmoke;
+    box-sizing: border-box;
+    margin: 10px auto;
+}
+
+.text-icons{
+    color: gray;
+    font-size: 30px;
+    padding:  10px;
+}
+
+.wrapper > .icons{
+    padding: 5px;
+}
+
+.wrapper > .icons > a{
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 30%;
+    text-align: center;
+    transition: 1s;
+    border: 2px solid rgb(144, 144, 252);
+}
+
+.wrapper > .icons > a > i{
+    color: #0088CC;
+    font-size: 30px;
+    margin: 10px auto;
+}
+
+.wrapper > .icons > a:hover{
+    background: #0088CC;
+    color: #f1f1f1;
+}
+
+.wrapper > .icons > a:hover i{
+    color: #fffefe;
+}
+
+

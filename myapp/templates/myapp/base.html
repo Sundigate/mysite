@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/base/body.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/base/header.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/base/footer.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/homepage/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/excursions/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/contacts/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/contacts/form.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/galery/style.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="{% static 'myapp/js/button-up.js' %}"></script>
+    <script src="{% static 'myapp/js/slider.js' %}"></script>
+    <script src="{% static 'myapp/js/slick.min.js' %}"></script>
+    <script src="{% static 'myapp/js/burger.js' %}"></script>
+    <link rel="icon" href="data:;base64,=">
+</head>
+<body style="margin: 0;">
+    <header class="header">
+        <div class="header-body"> 
+            <button class="btn-burger btn-burger-animation">
+                <span></span>
+            </button>
+    
+            <nav class="header-menu">
+                <ul class="header-list">
+                    <li><a href="{% url 'home' %}"><i class="fas fa-home"></i>Главная</a></li>
+                    <li><a href="{% url 'excursions' %}"><i class="fas fa-helicopter"></i>Экскурсии</a></li>                        
+                    <li><a href="{% url 'contacts' %}"><i class="far fa-address-book"></i>Контакты</a></li>
+                    <li><a href="{% url 'galery' %}"><i class="far fa-images"></i>Галерея</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-fone"> </div>
+    </header>
+    
+    {% block content %}{% endblock %}
+
+    <button class="btn-top" title="Вверх"><i class="fas fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="horizontal-menu">
+            <a href="">Политика конфиденциальности</a>
+            <a href="">Соглашение на обработку данных</a>
+            <a href="">Карта сайта</a>
+        </div>
+
+        <div class="text-info">
+            © 2010-2021 ООО ТК "Вертолётные экскурсии Камчатки" <br>
+            При использовании материалов сайта,<br>
+            гиперссылка на сайт www.helicopter-tour-of-kamchatka.com обязательна.<br>
+        </div>
+    </footer>
+</body>
+</html>

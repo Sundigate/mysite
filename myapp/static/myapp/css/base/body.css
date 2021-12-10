@@ -1,0 +1,18 @@
+.btn-top{
+    display: none;
+    outline: none;
+    border: none;
+    background: none;
+    position: fixed;
+    right: 35px;
+    bottom: 50px;
+    z-index: 999;
+    cursor: pointer;
+}
+
+.btn-top > i{
+    font-size: 50px;
+    color: rgb(109, 109, 109);
+}
+
+

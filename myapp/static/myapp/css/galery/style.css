@@ -1,0 +1,132 @@
+/*
+Слайдер
+.slick-slider{}
+
+Слайд 
+.slick-slide{}
+Слайд активный 
+.slick-slide.slick-active{}
+Слайд основной
+.slick-slide.slick-current{}
+Слайд по центру
+.slick-slide.slick-center{}
+
+Стрелка
+.slick-arrow{}
+Стрелка влево
+.slick-arrow.slick-prev{}
+Стрелка вправо
+.slick-arrow.slick-next{}
+Стрелка не активная
+.slick-arrow.slick-disabled{}
+
+Точки
+.slick-dots{}
+.slick-dots li{}
+.slick-dots button{}
+*/
+
+.wrapp{
+    padding: 20px;
+}
+
+/* Ограничивающая оболочка */
+.slick-list{
+    overflow: hidden;
+}
+/* Лента слайдов */
+.slick-track{
+    display: flex;
+    align-items: flex-start;     /* автоматически подстраивается по высоте*/
+}
+
+.slider .slider-img{
+    background-image: url(../../images/excursions/photo-computer-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    height: 400px;
+}
+
+/* Конкретный слайдер */
+.slider{
+    position: relative;
+    width: 70%;
+    background: whitesmoke;
+    margin: 0px auto;
+    padding: 0px 60px;
+    
+}
+.slider .slick-arrow{
+    transition: 0.5s;
+    background: whitesmoke;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    width: 50px;
+    height: 80px;
+    transform: translate(0%, -50%);
+}
+
+.slider .slick-arrow:hover{
+    background: rgb(209, 209, 209);
+}
+
+.slider .slick-arrow.slick-prev{
+    border: none;
+    left: 0;
+    background-image: url(../../images/slider/arrows/chevron-left-solid.svg);
+}
+
+.slider .slick-arrow.slick-next{
+    border: none;
+    right: 0;
+    background-image: url(../../images/slider/arrows/chevron-right-solid.svg);
+}
+
+
+.slider .slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.slider .slick-dots > li{
+    list-style: none;
+}
+.slider .slick-dots > li > button{
+    font-size: 0;
+    width: 40px;
+    height: 10px;
+    border-radius: 2px;
+    margin: 5px 5px;
+    background: white;
+    outline: none;
+}
+
+.slider .slick-dots .slick-active > button{
+    background: black;
+    border: 1px solid white;
+}
+
+.slider .slick-arrow.slick-disabled{
+    opacity: 0.3;
+}
+
+.slider-item{
+    text-align: center;
+    margin: 20px 0px;
+    outline: none;
+}
+
+.slider-item.slick-center{
+    opacity: 1;
+}
+
+
+
+

@@ -1,0 +1,94 @@
+
+
+.contact-form > h2{
+    text-align: center;
+    color: gray;
+    background: whitesmoke;
+    margin: 10px auto;
+    font-size: 40px;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+form{
+    background: whitesmoke;
+    padding: 10px;
+}
+
+.body-form{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    margin: 10px 0px;
+    font-size: 20px;
+    
+}
+
+.form-control{
+    box-sizing: border-box;
+    outline: none;
+    padding: 2px;
+    margin: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 7px;
+    box-shadow: inset 0px 0px 5px 0px rgb(156, 156, 156);
+    width: 30%;
+}
+
+.form-control:focus:invalid{
+    box-shadow: 0px 0px 10px 2px #d45252;
+    background: #d45252;
+}
+
+.form-control:focus:invalid::placeholder{
+    color: white;
+}
+
+.form-control:focus:valid{
+    box-shadow: 0px 0px 10px 2px #26bb21;
+    background: #26bb21;
+}
+
+form .name{
+    height: 40px;
+}
+
+form .letter{
+    height: 40px;
+}
+
+form .text{
+    height: 120px;
+}
+
+.form-control::placeholder{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn{
+    outline: none;
+    transition: 0.5s;
+    color: #0088CC;
+    display: block;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin: 0px 10px;
+    padding: 5px;
+    border: 1px solid rgb(209, 208, 208);
+    background: white;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.btn:hover{
+    background: #0088CC;
+    color: white;
+    cursor: pointer;
+}
+

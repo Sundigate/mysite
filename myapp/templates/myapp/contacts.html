@@ -1,0 +1,38 @@
+{% extends 'myapp/base.html' %}
+
+
+{% block title %}
+Контакты
+{% endblock %}
+
+
+{% block content %}
+<div class="contact-form">
+    <h2>Напишите мне</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="body-form">
+            {{ form }}
+        </div>
+        <button type="submit" class="btn">
+            Отправить
+        </button>
+        {% for message in messages %}   
+            {{ message }}  
+        {% endfor %}
+    </form>
+</div>
+
+<div class="content-contacts">
+    <div class="wrapper">
+        <div class="text-icons">Понравился сайт? Расскажи о нём в соцсетях</div>
+        <div class="icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

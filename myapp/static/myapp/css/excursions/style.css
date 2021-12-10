@@ -1,0 +1,180 @@
+.content{
+  background: white;
+}
+
+.content > h2{
+  width: 80%;
+  text-align: center;
+  color: gray;
+  background: whitesmoke;
+  margin: 10px auto;
+  font-size: 40px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.array-of-blocks{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0px auto;
+  background: whitesmoke;
+}
+
+.excursion-block{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 4fr 1fr 1fr;
+  margin: 15px 30px;
+  box-sizing: border-box;
+  border: 1px solid rgb(172, 172, 172);
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.excursion-block > h2{
+  grid-column: 1/5;
+}
+
+.excursion-img{
+  grid-column: 1/5;
+}
+
+.description{
+  justify-content: left;
+  grid-column: 1/4;
+  font-weight: bold;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.price{
+  grid-column: 1/5;
+  background: white;
+  margin: 10px 0px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgb(216, 216, 216);
+  border-top: 1px solid rgb(216, 216, 216);
+  color: red;
+  font-size: 30px;
+}
+
+.more{
+  grid-column: 4/5;
+  box-sizing: border-box;
+  background: white;
+  margin: 20px 10px;
+  transition: 0.5s;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+
+.more > a{
+  text-decoration: none;
+  color: green;
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.more:hover{
+  color: white;
+  background: green;
+}
+
+.more:hover > a{
+  color: white;
+}
+
+.excursion-img{
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.img1{
+  background-image: url(../../images/excursions/photo-computer-1.jpeg);
+}
+
+.img2{
+  background-image: url(../../images/excursions/photo-computer-2.jpeg);
+}
+
+.img3{
+  background-image: url(../../images/excursions/photo-computer-3.jpeg);
+}
+
+.img4{
+  background-image: url(../../images/excursions/photo-computer-4.jpeg);
+ 
+}
+
+.clock{
+  display: flex;
+  align-items: center;
+  background: whitesmoke;
+  width: 80%;
+  margin: 10px auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.clock-icon{
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.clock-icon > i{
+  font-size: 8em;
+  color: black;
+}
+
+.clock-text{
+  box-sizing: border-box;
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+.clock-text > a > i{
+  transition: 0.5s;
+  color: green;
+  font-size: 30px;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 10px;
+}
+
+.clock-text > a > i:hover{
+  background: green;
+  color: white;
+}
+
+@media(max-width: 870px){
+  .array-of-blocks{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(min-width: 870px) and (max-width: 1150px){
+  .array-of-blocks{
+    grid-template-columns: 1fr;
+  }
+
+  .excursion-block{
+    width: 60%;
+    margin: 15px auto;
+  }
+}
+
+
+
+
+
+
+
+

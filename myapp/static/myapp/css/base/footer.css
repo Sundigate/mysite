@@ -1,0 +1,43 @@
+footer{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    background: rgb(57, 57, 80);
+    height: 30em;
+}
+
+.text-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.3em;
+    color: white;
+    padding: 10px;
+    grid-row: 4/5;
+    grid-column: 1/5;
+    background: rgb(39, 39, 54);
+}
+
+.horizontal-menu{
+    text-align: right;
+    grid-column: 2/5;
+    padding: 10px;
+}
+
+.horizontal-menu > a{
+    text-align: center;
+    transition: 0.5s;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 0.3em;
+    color: white;
+}
+
+.horizontal-menu > a:hover{
+    color: rgb(172, 172, 172);
+}
+
+
+
+
+
